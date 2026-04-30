@@ -824,3 +824,74 @@ p {
 #contact.bg-text:after{
   right: 2%;
 }
+/* ===== MOBILE RESPONSIVE FIX ===== */
+@media (max-width: 768px){
+
+  header{
+    position: fixed !important;
+    left: -280px;
+    top: 0;
+    width: 260px !important;
+    height: 100vh;
+    z-index: 999;
+    background: #fff;
+    transition: 0.3s;
+    overflow-y: auto;
+  }
+
+  body.nav-active header{
+    left: 0;
+  }
+
+  main{
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+  .container,
+  .container-fluid{
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  section{
+    padding: 45px 10px !important;
+  }
+
+  h1,
+  .banner-title{
+    font-size: 32px !important;
+  }
+
+  h2,
+  .display-4,
+  .display-1{
+    font-size: 28px !important;
+  }
+
+  p{
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .bg-text:after{
+    font-size: 130px !important;
+    right: 0 !important;
+    bottom: 40px !important;
+  }
+
+  .email-links a{
+    font-size: 13px !important;
+    word-break: break-word;
+  }
+
+  .header-wrap ul.list-unstyled{
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+  }
+}
