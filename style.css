@@ -895,3 +895,152 @@ p {
     justify-content: center !important;
   }
 }
+/* ===== FULL MOBILE RESPONSIVE DESIGN ===== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    position: fixed !important;
+    left: -280px;
+    top: 0;
+    width: 260px !important;
+    height: 100vh;
+    z-index: 999;
+    background: #fff;
+    transition: 0.3s;
+    overflow-y: auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  }
+
+  body.nav-active header {
+    left: 0;
+  }
+
+  main {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+  .container,
+  .container-fluid {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .row {
+    margin: 0 !important;
+  }
+
+  .col-lg-6,
+  .col-lg-4,
+  .col-lg-3,
+  .col-lg-5,
+  .col-lg-7,
+  .col-lg-8 {
+    width: 100% !important;
+  }
+
+  section {
+    padding: 45px 12px !important;
+    background: rgba(255,255,255,0.82);
+    border-radius: 14px;
+    margin-bottom: 22px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+  }
+
+  h1,
+  .banner-title {
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+    margin-top: 35px;
+  }
+
+  h2,
+  .display-4,
+  .display-1 {
+    font-size: 28px !important;
+    line-height: 1.25 !important;
+  }
+
+  h3,
+  .info-title,
+  .sub-heading {
+    font-size: 20px !important;
+  }
+
+  p {
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+  }
+
+  .banner-content,
+  .section-header,
+  .data-info,
+  .icon-box,
+  .right-content {
+    text-align: center !important;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 12px !important;
+    font-size: 16px !important;
+  }
+
+  .portfolio-item img,
+  .image-holder img {
+    width: 100%;
+    height: auto;
+  }
+
+  input,
+  textarea {
+    width: 100% !important;
+    font-size: 14px !important;
+  }
+
+  .bg-text:after {
+    font-size: 130px !important;
+    right: 0 !important;
+    bottom: 40px !important;
+  }
+
+  .email-links a {
+    font-size: 13px !important;
+    word-break: break-word;
+    text-align: center;
+  }
+
+  .header-wrap ul.list-unstyled {
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+  }
+
+  .header-wrap ul svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .main-wallpaper,
+  .main-content-overlay {
+    min-height: 100vh;
+  }
+
+  .bg-video {
+    left: 0 !important;
+    width: 100% !important;
+  }
+}
